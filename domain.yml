@@ -20,6 +20,7 @@ responses:
   utter_ask_email:
   - text: |
       What is your email address?
+  - text: Hey, give me your address!
   utter_subscribed:
   - text: |
       Check your inbox at {email} in order to finish subscribing to the newsletter!
