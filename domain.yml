@@ -8,5 +8,4 @@ intents:
 - bot_functions
 - adherance
 actions:
-- '...'
 - action_voiceflow_dm
