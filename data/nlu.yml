@@ -1,21 +1,20 @@
 nlu:
-- intent: greet
-  examples: |
-    - Hi
-    - Hey!
-    - Hallo
-    - Good day
-    - Good morning
-
-- intent: subscribe
-  examples: |
-    - I want to get the newsletter
-    - Can you send me the newsletter?
-    - Can you sign me up for the newsletter?
-
-- intent: inform
-  examples: |
-    - My email is example@example.com
-    - random@example.com
-    - Please send it to anything@example.com
-    - Email is something@example.com
+  - intent: hiv_drug_freq
+    examples: |
+      - when can I be free of this drug?
+      - will I be taking drugs all my life?
+      - how long will I have to take medication?
+      - when will I stop using this drug?
+  - intent: intro_ayo
+    examples: |
+      - What can you do, Ayo?
+      - Tell me about you, Ayo
+  - intent: bot_functions
+    examples: |
+      - How can you help me?
+      - What else can you do?
+      - Why should I chat with you?
+  - intent: adherance
+    examples: |
+      - Tell me the importance of adherance
+      - I would like to know about adherance
