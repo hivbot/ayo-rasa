@@ -12,7 +12,7 @@
 # 3. Remove the comment on the "action_endpoint" field in "endpoints.yml". The url must match with where the rasa custom actions server is running
 # 4. Train the rasa project: "rasa train"
 # 5. Open the rasa shell: "rasa shell"
-# 6. Interact with the rasa project. The returned responses will correspond with speak steps in the Voiceflow project
+# 6. Interact with the rasa project. The returned responses will correspond with speak steps in the Voiceflow project.
 
 import json
 import requests
