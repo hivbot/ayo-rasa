@@ -25,7 +25,7 @@ from rasa_sdk.executor import CollectingDispatcher
 import os
 
 
-endpoint = "https://general-runtime.voiceflow.com/interact/62572aa7733ded001cd996d9"
+endpoint = "https://general-runtime.voiceflow.com/interact/627ec1a15c8725001cfcf876"
 
 # https://www.voiceflow.com/api/dialog-manager#section/Authentication
 token = os.environ.get("VF_API_KEY")
