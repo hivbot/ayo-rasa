@@ -15,3 +15,11 @@ stories:
     steps:
       - intent: adherance
       - action: action_voiceflow_dm
+  - story: start_story
+    steps:
+      - intent: start
+      - action: action_voiceflow_dm
+  - story: introduction_story
+    steps:
+      - intent: introduction
+      - action: action_voiceflow_dm

@@ -18,3 +18,12 @@ nlu:
     examples: |
       - Tell me the importance of adherance
       - I would like to know about adherance
+  - intent: start
+    examples: |
+      - hello
+      - hi
+  - intent: introduction
+    examples: |
+      - how are you?
+      - what is your name?
+      - who are you?

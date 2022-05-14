@@ -2,10 +2,17 @@ version: '3.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-intents:
-- hiv_drug_freq
-- intro_ayo
-- bot_functions
-- adherance
 actions:
-- action_voiceflow_dm
+  - ...
+  - action_voiceflow_dm
+intents:
+  - hiv_drug_freq
+  - intro_ayo
+  - bot_functions
+  - adherance
+  - start
+  - introduction
+entities: []
+slots: {}
+responses: {}
+forms: {}
