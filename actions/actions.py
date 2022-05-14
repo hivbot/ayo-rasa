@@ -111,6 +111,7 @@ class ActionVoiceflowDM(Action):
 
         r = requests.post(endpoint, json = data, headers = { "authorization": token })
         response = r.json()
+        # print(response)
 
         state_manager.set(response["state"])
 
@@ -118,5 +119,10 @@ class ActionVoiceflowDM(Action):
             if (trace["type"] == "speak"):
                 dispatcher.utter_message(text=trace["payload"]["message"])
             elif (trace["type"] == "text"):
-                dispatcher.utter_message(text=parse_slate_content(trace["payload"]["slate"]["content"]))
+                text=parse_slate_content(trace["payload"]["slate"]["content"])
+                dispatcher.utter_message(text)
+            elif (trace["type"] == "visual"):
+                img=trace["payload"]["image"]
+                dispatcher.utter_message(text="This is how I look", image=img)
+                
         return []
