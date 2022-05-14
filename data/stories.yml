@@ -1,8 +1,25 @@
 stories:
- - story: greet and subscribe
-   steps:
-   - intent: greet
-   - action: utter_greet
-   - intent: subscribe
-   - action: newsletter_form
-   - active_loop: newsletter_form
+  - story: hiv_drug_freq_story
+    steps:
+      - intent: hiv_drug_freq
+      - action: action_voiceflow_dm
+  - story: intro_ayo_story
+    steps:
+      - intent: intro_ayo
+      - action: action_voiceflow_dm
+  - story: bot_functions_story
+    steps:
+      - intent: bot_functions
+      - action: action_voiceflow_dm
+  - story: adherance_story
+    steps:
+      - intent: adherance
+      - action: action_voiceflow_dm
+  - story: start_story
+    steps:
+      - intent: start
+      - action: action_voiceflow_dm
+  - story: introduction_story
+    steps:
+      - intent: introduction
+      - action: action_voiceflow_dm
