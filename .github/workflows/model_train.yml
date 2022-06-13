@@ -17,6 +17,7 @@ jobs:
           #requirements_file: requirements.txt
           #data_validate: true
           rasa_train: true
+          train_args: --fixed-model-name model
           #cross_validation: true
           #rasa_test: true
           #test_type: all
