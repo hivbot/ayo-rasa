@@ -20,8 +20,8 @@ nlu:
       - I would like to know about adherance
   - intent: start
     examples: |
-      - hello
-      - hi
+      - Hello
+      - Hi
   - intent: introduction
     examples: |
       - how are you?
