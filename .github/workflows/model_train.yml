@@ -33,5 +33,5 @@ jobs:
           git config user.email github-actions@github.com
           git add models/
           git commit -am "Upload model" \
-          && git push --force \
+          && git push origin HEAD:main \
           || true
