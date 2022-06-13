@@ -2,7 +2,7 @@
   push:
     branches:
       - main
-    paths:
+    paths-ignore:
       - data/**
 jobs:
   training-testing:
@@ -23,7 +23,13 @@ jobs:
           #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Upload model
-        uses: actions/upload-artifact@main
-        with:
-          name: model
-          path: models
+        #uses: actions/upload-artifact@main
+        #with:
+          #name: model
+          #path: models
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -am "Upload model for Rasa OSS $RASA_VERSION" \
+          && git push origin $GITHUB_HEAD_REF \
+          || true
