@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-    paths:
+    paths-ignore:
     - 'actions/**'
 
 jobs:
@@ -19,10 +19,11 @@ jobs:
       # Full list of parameters: https://github.com/RasaHQ/action-server-gha/tree/master#input-arguments
       with:
         docker_image_name: 'andreasmartinfhnw/ayo-action'
-        docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
-        docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+        docker_registry: 'https://ghcr.io'
+        docker_registry_login: ${{ github.actor }} #${{ secrets.DOCKER_HUB_LOGIN }}
+        docker_registry_password: ${{ secrets.GITHUB_TOKEN }} #${{ secrets.DOCKER_HUB_PASSWORD }}
         # More details about github context:
         # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
         #
         # github.sha - The commit SHA that triggered the workflow run
-        docker_image_tag: ${{ github.sha }}
+        docker_image_tag: latest,${{ github.sha }}
