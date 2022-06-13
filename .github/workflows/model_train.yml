@@ -2,7 +2,7 @@
   push:
     branches:
       - main
-    paths-ignore:
+    paths:
       - data/**
 jobs:
   training-testing:
