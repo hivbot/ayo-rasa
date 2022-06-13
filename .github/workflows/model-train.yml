@@ -14,13 +14,13 @@ jobs:
         uses: RasaHQ/rasa-train-test-gha@main
         with:
           rasa_version: latest-full
-          requirements_file: requirements.txt
-          data_validate: true
+          #requirements_file: requirements.txt
+          #data_validate: true
           rasa_train: true
-          cross_validation: true
-          rasa_test: true
-          test_type: all
-          publish_summary: true
+          #cross_validation: true
+          #rasa_test: true
+          #test_type: all
+          #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Upload model
         if: github.ref == 'refs/heads/main'
