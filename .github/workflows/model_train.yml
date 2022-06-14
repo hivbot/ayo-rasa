@@ -4,6 +4,7 @@
       - main
     paths-ignore:
       - data/**
+permissions: write-all
 jobs:
   training-testing:
     name: Training and Testing
