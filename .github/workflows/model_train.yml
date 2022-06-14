@@ -28,10 +28,11 @@ jobs:
         #with:
           #name: model
           #path: models
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add models/
-          git commit -am "Upload model" \
-          && git push origin HEAD:main \
-          || true
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            model.tar.gz
