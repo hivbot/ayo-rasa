@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-    paths:
+    paths-ignore:
     - 'actions/**'
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
       name: Build an action server with a custom actions
       uses: RasaHQ/action-server-gha@main
       with:
-        docker_image_name: 'andreasmartinfhnw/ayo-action'
+        docker_image_name: 'hivbot/ayo-rasa' #'andreasmartinfhnw/ayo-action'
         docker_registry: 'https://ghcr.io'
         docker_registry_login: ${{ github.actor }} #${{ secrets.DOCKER_HUB_LOGIN }}
         docker_registry_password: ${{ secrets.GITHUB_TOKEN }} #${{ secrets.DOCKER_HUB_PASSWORD }}
-        docker_image_tag: latest,${{ github.sha }}
+        docker_image_tag: latest #${{ github.sha }}
