@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
+    paths:
     - 'actions/**'
 
 jobs:
