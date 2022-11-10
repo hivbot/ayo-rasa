@@ -11,15 +11,127 @@ stories:
     steps:
       - intent: bot_functions
       - action: action_voiceflow_dm
-  - story: adherance_story
+  - story: adherence_story
     steps:
-      - intent: adherance
+      - intent: adherence
       - action: action_voiceflow_dm
-  - story: start_story
+  - story: VF.YES_story
     steps:
-      - intent: start
+      - intent: VF.YES
       - action: action_voiceflow_dm
-  - story: introduction_story
+  - story: VF.NO_story
     steps:
-      - intent: introduction
+      - intent: VF.NO
+      - action: action_voiceflow_dm
+  - story: VF.STOP_story
+    steps:
+      - intent: VF.STOP
+      - action: action_voiceflow_dm
+  - story: VF.NEXT_story
+    steps:
+      - intent: VF.NEXT
+      - action: action_voiceflow_dm
+  - story: VF.PAUSE_story
+    steps:
+      - intent: VF.PAUSE
+      - action: action_voiceflow_dm
+  - story: VF.CANCEL_story
+    steps:
+      - intent: VF.CANCEL
+      - action: action_voiceflow_dm
+  - story: VF.RESUME_story
+    steps:
+      - intent: VF.RESUME
+      - action: action_voiceflow_dm
+  - story: VF.REPEAT_story
+    steps:
+      - intent: VF.REPEAT
+      - action: action_voiceflow_dm
+  - story: VF.PREVIOUS_story
+    steps:
+      - intent: VF.PREVIOUS
+      - action: action_voiceflow_dm
+  - story: VF.START_OVER_story
+    steps:
+      - intent: VF.START_OVER
+      - action: action_voiceflow_dm
+  - story: menu_story
+    steps:
+      - intent: menu
+      - action: action_voiceflow_dm
+  - story: disclosure_general_story
+    steps:
+      - intent: disclosure_general
+      - action: action_voiceflow_dm
+  - story: disclosure_spouse_story
+    steps:
+      - intent: disclosure_spouse
+      - action: action_voiceflow_dm
+  - story: marriage_relationship_story
+    steps:
+      - intent: marriage_relationship
+      - action: action_voiceflow_dm
+  - story: nutrition_story
+    steps:
+      - intent: nutrition
+      - action: action_voiceflow_dm
+  - story: life_building_skills_story
+    steps:
+      - intent: life_building_skills
+      - action: action_voiceflow_dm
+  - story: hiv_basics_story
+    steps:
+      - intent: hiv_basics
+      - action: action_voiceflow_dm
+  - story: hiv_myths_story
+    steps:
+      - intent: hiv_myths
+      - action: action_voiceflow_dm
+  - story: drugs_and_side_effects_story
+    steps:
+      - intent: drugs_and_side_effects
+      - action: action_voiceflow_dm
+  - story: feeling_good_story
+    steps:
+      - intent: feeling_good
+      - action: action_voiceflow_dm
+  - story: feeling_ok_story
+    steps:
+      - intent: feeling_ok
+      - action: action_voiceflow_dm
+  - story: feeling_not_ok_story
+    steps:
+      - intent: feeling_not_ok
+      - action: action_voiceflow_dm
+  - story: menstruation_story
+    steps:
+      - intent: menstruation
+      - action: action_voiceflow_dm
+  - story: greetings_story
+    steps:
+      - intent: greetings
+      - action: action_voiceflow_dm
+  - story: Menstruation and H_story
+    steps:
+      - intent: Menstruation and H
+      - action: action_voiceflow_dm
+  - story: social_support_story
+    steps:
+      - intent: social_support
+      - action: action_voiceflow_dm
+  - story: support_group_purpose_story
+    steps:
+      - intent: support_group_purpose
+      - action: action_voiceflow_dm
+  - story: feeling_depressed_story
+    steps:
+      - intent: feeling_depressed
+      - action: action_voiceflow_dm
+  - story: no_side_effects_story
+    steps:
+      - intent: no_side_effects
+      - action: action_voiceflow_dm
+  - story: severe_side_effects_story
+    steps:
+      - intent: severe_side_effects
       - action: action_voiceflow_dm

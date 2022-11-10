@@ -1,14 +1,73 @@
-version: '3.0'
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
-intents:
-- hiv_drug_freq
-- intro_ayo
-- bot_functions
-- adherance
-- start
-- introduction
 actions:
-- '...'
-- action_voiceflow_dm
+  - ...
+  - action_voiceflow_dm
+intents:
+  - hiv_drug_freq
+  - intro_ayo
+  - bot_functions
+  - adherence
+  - VF.YES
+  - VF.NO
+  - VF.STOP
+  - VF.NEXT
+  - VF.PAUSE
+  - VF.CANCEL
+  - VF.RESUME
+  - VF.REPEAT
+  - VF.PREVIOUS
+  - VF.START_OVER
+  - menu
+  - disclosure_general
+  - disclosure_spouse
+  - marriage_relationship
+  - nutrition
+  - life_building_skills
+  - hiv_basics
+  - hiv_myths
+  - drugs_and_side_effects
+  - feeling_good
+  - feeling_ok
+  - feeling_not_ok
+  - menstruation
+  - greetings
+  - Menstruation and H
+  - social_support
+  - support_group_purpose
+  - negative_effects
+  - feeling_depressed
+  - no_side_effects
+  - severe_side_effects
+entities:
+  - sg_purpose
+  - side_effect
+  - severe_effect
+slots:
+  sg_purpose:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: sg_purpose
+  side_effect:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: side_effect
+      - type: from_entity
+        entity: side_effect
+        conditions:
+          - active_loop: negative_effects_form
+  severe_effect:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: severe_effect
+responses:
+  utter_ask_negative_effects_form_side_effect:
+    - text: What is the value of side_effect
+forms:
+  negative_effects_form:
+    required_slots:
+      - side_effect

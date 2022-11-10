@@ -1,1 +1,13 @@
-rules: []
+rules:
+  - rule: activate_negative_effects_form
+    steps:
+      - intent: negative_effects
+      - action: negative_effects_form
+      - active_loop: negative_effects_form
+  - rule: submit_negative_effects_form
+    condition:
+      - active_loop: negative_effects_form
+    steps:
+      - action: negative_effects_form
+      - active_loop: null
+      - action: action_voiceflow_dm
