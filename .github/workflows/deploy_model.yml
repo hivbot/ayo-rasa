@@ -1,10 +1,9 @@
 name: Deploy Model
 
 on:
-  workflow_run:
-    workflows: ["Model Train"]
-    types:
-      - completed
+  push:
+    branches:
+      - main
 
 jobs:
   deployment:
