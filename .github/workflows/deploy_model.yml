@@ -1,0 +1,20 @@
+name: Deploy Model
+
+on:
+  workflow_run:
+    workflows: ["Model Train"]
+    types:
+      - completed
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy Model
+      uses: fjogeleit/http-request-action
+      with:
+        url: '${{ secrets.RASA_HTTP_API }}/model?token=${{ secrets.RASA_TOKEN }}'
+        method: 'PUT'
+        customHeaders: '{"Content-Type": "application/json"}'
+        data: '{"model_server":{"url":"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/releases/download/latest/model.tar.gz","wait_time_between_pulls":null}}'
+        preventFailureOnNoResponse: 'true'
