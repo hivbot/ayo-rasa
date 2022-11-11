@@ -1,3 +1,5 @@
+name: Model Train
+
 'on':
   push:
     branches:
