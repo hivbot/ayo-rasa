@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Deploy Model
-      uses: fjogeleit/http-request-action
+      uses: fjogeleit/http-request-action@v1
       with:
         url: '${{ secrets.RASA_HTTP_API }}/model?token=${{ secrets.RASA_TOKEN }}'
         method: 'PUT'
