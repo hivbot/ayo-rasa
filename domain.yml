@@ -37,10 +37,13 @@ intents:
   - feeling_depressed
   - no_side_effects
   - severe_side_effects
+  - swallowing_sweet
+  - drug_use_storage
 entities:
   - sg_purpose
   - side_effect
   - severe_effect
+  - sweet_solvent
 slots:
   sg_purpose:
     type: text
@@ -64,10 +67,25 @@ slots:
     mappings:
       - type: from_entity
         entity: severe_effect
+  sweet_solvent:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: sweet_solvent
+      - type: from_entity
+        entity: sweet_solvent
+        conditions:
+          - active_loop: swallowing_sweet_form
 responses:
   utter_ask_negative_effects_form_side_effect:
     - text: What is the value of side_effect
+  utter_ask_swallowing_sweet_form_sweet_solvent:
+    - text: What is the value of sweet_solvent
 forms:
   negative_effects_form:
     required_slots:
       - side_effect
+  swallowing_sweet_form:
+    required_slots:
+      - sweet_solvent

@@ -11,3 +11,15 @@ rules:
       - action: negative_effects_form
       - active_loop: null
       - action: action_voiceflow_dm
+  - rule: activate_swallowing_sweet_form
+    steps:
+      - intent: swallowing_sweet
+      - action: swallowing_sweet_form
+      - active_loop: swallowing_sweet_form
+  - rule: submit_swallowing_sweet_form
+    condition:
+      - active_loop: swallowing_sweet_form
+    steps:
+      - action: swallowing_sweet_form
+      - active_loop: null
+      - action: action_voiceflow_dm

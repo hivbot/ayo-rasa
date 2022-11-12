@@ -89,6 +89,7 @@ nlu:
       - drugs_and_side_effects
   - intent: feeling_good
     examples: |
+      - Good
       - No p
       - No long thing/tin
       - Fine fine
@@ -295,6 +296,22 @@ nlu:
       - I may have [mouth sores](severe_effect) like symptoms
       - I have severe [tingling sensation](severe_effect)
       - My skin is yellow, is it [jaundice](severe_effect)?
+  - intent: swallowing_sweet
+    examples: |
+      - [alcohol](sweet_solvent)
+      - sometimes i take them with [juice](sweet_solvent)
+      - I take them with [mineral](sweet_solvent)and [water](sweet_solvent)
+      - I take them with [alcohol](sweet_solvent)
+      - With [juice](sweet_solvent)
+      - I use [mineral](sweet_solvent)
+      - I swallow them with [water](sweet_solvent)
+      - I take my sweets with [alcohol](sweet_solvent)
+      - I drink it with [juice](sweet_solvent)
+      - I drink it with [mineral](sweet_solvent)
+      - I take my sweets with [water](sweet_solvent)
+  - intent: drug_use_storage
+    examples: |
+      - drug_use_storage
   - synonym: appointment
     examples: |
       - reminder
@@ -437,3 +454,36 @@ nlu:
       - yellow skin
       - yellow eyes
       - my wee wee is yellow
+  - synonym: alcohol
+    examples: |
+      - beer
+      - orijin
+      - trophy
+      - guda
+      - guilder
+  - synonym: juice
+    examples: |
+      - orange juice
+      - hollandia
+      - caprisun
+      - capri sun
+  - synonym: mineral
+    examples: |
+      - soda
+      - soft drink
+      - coke
+      - coca cola
+      - coka cola
+      - fanta
+      - sprite
+      - pepsi
+      - bigi apple
+  - synonym: water
+    examples: |
+      - bottled water
+      - bottle water
+      - pure water
+      - sachet water
+      - tap water
+      - well water
+      - borehole water

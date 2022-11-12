@@ -135,3 +135,7 @@ stories:
     steps:
       - intent: severe_side_effects
       - action: action_voiceflow_dm
+  - story: drug_use_storage_story
+    steps:
+      - intent: drug_use_storage
+      - action: action_voiceflow_dm
