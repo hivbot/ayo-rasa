@@ -20,10 +20,11 @@ jobs:
           #requirements_file: requirements.txt
           #data_validate: true
           rasa_train: true
+          train_type: nlu
           train_args: --fixed-model-name model
           #cross_validation: true
-          #rasa_test: true
-          #test_type: all
+          rasa_test: true
+          test_type: nlu
           #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
       - name: Upload model
