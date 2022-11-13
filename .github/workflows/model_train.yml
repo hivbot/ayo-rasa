@@ -27,14 +27,17 @@ jobs:
           test_type: nlu
           #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Automatic Release Tag
-        uses: justincy/github-action-npm-release@2.0.1
-        id: release-tag
+      - name: Date-Time
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 1
+          format: 'YYYY-MM-DD-HH-mm-ss'
       - name: Upload Model
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: steps.release-tag.outputs.release_id
+          automatic_release_tag: ${{steps.time.outputs.time}}
           prerelease: true
           title: "Development Build"
           files: |
@@ -45,5 +48,5 @@ jobs:
           url: '${{ secrets.RASA_HTTP_API }}/model?token=${{ secrets.RASA_TOKEN }}'
           method: 'PUT'
           customHeaders: '{"Content-Type": "application/json"}'
-          data: '{"model_server":{"url":"${{github.server_url}}/${{github.repository}}/releases/download/${{steps.release-tag.outputs.release_id}}/model.tar.gz","wait_time_between_pulls":null}}'
+          data: '{"model_server":{"url":"${{github.server_url}}/${{github.repository}}/releases/download/${{steps.time.outputs.time}}/model.tar.gz","wait_time_between_pulls":null}}'
           preventFailureOnNoResponse: 'true'
