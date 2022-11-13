@@ -27,12 +27,14 @@ jobs:
           test_type: nlu
           #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
-      - id: upload-model
-        name: Upload model
+      - name: Automatic Release Tag
+        uses: justincy/github-action-npm-release@2.0.1
+        id: release-tag
+      - name: Upload model
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
+          automatic_release_tag: steps.release-tag.outputs.release_id
           prerelease: true
           title: "Development Build"
           files: |
@@ -43,5 +45,5 @@ jobs:
           url: '${{ secrets.RASA_HTTP_API }}/model?token=${{ secrets.RASA_TOKEN }}'
           method: 'PUT'
           customHeaders: '{"Content-Type": "application/json"}'
-          data: '{"model_server":{"url":"${{github.server_url}}/${{github.repository}}/releases/download/${{ steps.upload-model.outputs.automatic_releases_tag }}/model.tar.gz","wait_time_between_pulls":null}}'
+          data: '{"model_server":{"url":"${{github.server_url}}/${{github.repository}}/releases/download/${{steps.release-tag.outputs.release_id}}/model.tar.gz","wait_time_between_pulls":null}}'
           preventFailureOnNoResponse: 'true'
