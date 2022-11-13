@@ -8,8 +8,8 @@ name: Model Train
       - data/**
 
 jobs:
-  training-testing:
-    name: Training and Testing
+  training-testing-upload-pull:
+    name: Training, Testing, Upload and Pull
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -27,11 +27,8 @@ jobs:
           test_type: nlu
           #publish_summary: true
           github_token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Upload model
-        #uses: actions/upload-artifact@main
-        #with:
-          #name: model
-          #path: models
+      - id: upload-model
+        name: Upload model
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
@@ -40,3 +37,11 @@ jobs:
           title: "Development Build"
           files: |
             models/model.tar.gz
+      - name: Pull Model
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: '${{ secrets.RASA_HTTP_API }}/model?token=${{ secrets.RASA_TOKEN }}'
+          method: 'PUT'
+          customHeaders: '{"Content-Type": "application/json"}'
+          data: '{"model_server":{"url":"${{github.server_url}}/${{github.repository}}/releases/download/${{ steps.upload-model.outputs.automatic_releases_tag }}/model.tar.gz","wait_time_between_pulls":null}}'
+          preventFailureOnNoResponse: 'true'
