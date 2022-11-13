@@ -300,7 +300,7 @@ nlu:
     examples: |
       - [alcohol](sweet_solvent)
       - sometimes i take them with [juice](sweet_solvent)
-      - I take them with [mineral](sweet_solvent)and [water](sweet_solvent)
+      - I take them with [mineral](sweet_solvent) and [water](sweet_solvent)
       - I take them with [alcohol](sweet_solvent)
       - With [juice](sweet_solvent)
       - I use [mineral](sweet_solvent)
