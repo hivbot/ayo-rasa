@@ -1,3 +1,5 @@
+version: "3.1"
+
 rules:
   - rule: activate_negative_effects_form
     steps:

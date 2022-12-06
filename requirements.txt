@@ -1,3 +1,2 @@
 rasa[full]
-mitie
-nest_asyncio
+https://huggingface.co/spacy/en_core_web_md/resolve/main/en_core_web_md-any-py3-none-any.whl
