@@ -6,7 +6,7 @@ on:
       - main
     paths:
     - 'components/**'
-    - './Dockerfile'
+    - 'Dockerfile'
 
 jobs:
   build_and_deploy:
