@@ -1,0 +1,22 @@
+name: Build Rasa Server
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+    - 'components/**'
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build Rasa Server image
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Build and publish a Docker image for ${{ github.repository }}
+      uses: macbre/push-to-ghcr@main
+      with:
+        image_name: 'hivbot/ayo-rasa-nlu'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
