@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY ./components /app/components
 
-# ENV PYTHONPATH "${PYTHONPATH}:/app"
+ENV PYTHONPATH "${PYTHONPATH}:/app"
