@@ -17,7 +17,7 @@ jobs:
         uses: RasaHQ/rasa-train-test-gha@main
         with:
           rasa_version: latest #latest-full
-          rasa_image: ayo-rasa-nlu
+          rasa_image: ghcr.io/hivbot/ayo-rasa-nlu
           #requirements_file: requirements.txt
           #data_validate: true
           rasa_train: true
