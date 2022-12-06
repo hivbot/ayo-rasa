@@ -72,7 +72,7 @@ class SentimentAnalyzer(GraphComponent, EntityExtractorMixin):
         #       during training.
     #    ...
 
-    #    return training_data 
+    #    return training_data
 
     @staticmethod
     def convert_to_rasa(self, value, confidence):
