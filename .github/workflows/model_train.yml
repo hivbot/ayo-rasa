@@ -1,11 +1,11 @@
 name: Model Train
 
-'on':
-  push:
-    branches:
-      - main
-    paths:
-      - data/**
+on: [workflow_dispatch]
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - data/**
 
 jobs:
   training-testing-upload-pull:
