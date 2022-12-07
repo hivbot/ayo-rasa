@@ -1,7 +1,9 @@
 FROM rasa/rasa:latest-full
 
-WORKDIR /app
+USER root
 
 COPY ./components /app/components
+
+USER 1001
 
 ENV PYTHONPATH "${PYTHONPATH}:/app"
