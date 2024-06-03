@@ -4,9 +4,175 @@ nlu:
   - intent: hiv_drug_freq
     examples: |
       - hiv_drug_freq
+  - intent: hiv_myths
+    examples: |
+      - hiv_myths
+  - intent: drugs_and_side_effects
+    examples: |
+      - Side Effects and Drugs
+  - intent: feeling_good
+    examples: |
+      - I dey oo
+      - perfect thanks
+      - doing great
+      - No pro
+      - Mo wa daada
+      - I'm fine oo, you nko
+      - Wonderful
+      - Splendid and you?
+      - No quanch
+      - I dey good
+      - I dey kakaraka
+      - No problem
+      - Im good
+      - I am enjoying life
+      - I’m cool as usual padi
+      - Am cool and you
+      - I'm great!
+      - I am feeling very well!
+      - Absolutely great!
+      - Feeling good
+      - I am great, thank you!
+      - I am doing good
+      - I am feeling great today!
+      - I’m good dear
+      - Good
+      - No p
+      - No long thing/tin
+      - Fine fine
+      - I dey kampe
+      - Very very good
+      - Very very fine
+      - great
+      - Great
+  - intent: feeling_ok
+    examples: |
+      - Very well thanks
+      - I fine sha
+      - Fine oooo
+      - Very well thank you
+      - doing well
+      - I am well Ayo
+      - all is well Ayo
+      - I dey okay
+      - Have had worse days
+      - I dey fine ooo
+      - I dey kampe
+      - No yawah
+      - No wahala
+      - I'm cool
+      - Fine and how are you
+      - Am fine thank you
+      - Fyn
+      - Hi I’m fine and you
+      - I'm alright
+      - not bad
+      - OK
+      - Alright
+      - I am doing fine
+      - I am ok
+      - I am alright
+      - Quite ok
+      - Fine
+      - Doing fine
+  - intent: feeling_not_ok
+    examples: |
+      - unhappy today
+      - I am sad
+      - I'm sad
+      - e no easy
+      - bad
+      - Am stressed out
+      - I am not fyn
+      - Not fyn
+      - not happy today
+      - Not fine
+      - Not well at all
+      - Very bored and fatigued
+      - Very tired oo
+      - Not okay oo
+      - Not okay not fine
+      - Bad day
+      - I'm not feeling well
+      - I'm unwell
+      - i am unwell
+      - I don't want to talk about it
+      - Not doing good
+      - I am not feeling so well
+      - Not feeling good
+      - Not good at all
+      - Not that great
+      - Not so well
+  - intent: menstruation
+    examples: |
+      - menstruation
+  - intent: greetings
+    examples: |
+      - greetings
+  - intent: None
+    examples: |
+      - None
+  - intent: start_medication_reminder
+    examples: |
+      - medication
+  - intent: snooze_reminder
+    examples: |
+      - snooze_reminder
+  - intent: Taken!
+    examples: |
+      - Taken!
+  - intent: Remind me later
+    examples: |
+      - Remind me later
   - intent: intro_ayo
     examples: |
       - intro_ayo
+      - Introduction
+  - intent: Module_Yes_Handback
+    examples: |
+      - Module_Yes_Handback_Medicine Adherence
+      - Module_Yes_Handback_Drug Use and Storage
+      - Module_Yes_Handback_Side Effects and Drugs
+      - Module_Yes_Handback_Sex and H
+      - Module_Yes_Handback_H Myths
+      - Module_Yes_Handback_Stigmatisation
+      - Module_Yes_Handback_Jewel Story
+      - Module_Yes_Handback_Social Support
+      - Module_Yes_Handback_Disclosure
+      - Module_Yes_Handback_Disclosure in a Partnership
+      - Module_Yes_Handback_H Basics
+      - Module_Yes_Handback_Stress Management
+      - Module_Yes_Handback_Menstruation and H
+  - intent: Not_Interested_Handback
+    examples: |
+      - Not_Interested_Handback_Medicine Adherence
+      - Not_Interested_Handback_Drug Use and Storage
+      - Not_Interested_Handback_Side Effects and Drugs
+      - Not_Interested_Handback_Sex and H
+      - Not_Interested_Handback_H Myths
+      - Not_Interested_Handback_Stigmatisation
+      - Not_Interested_Handback_Jewel Story
+      - Not_Interested_Handback_Social Support
+      - Not_Interested_Handback_Disclosure
+      - Not_Interested_Handback_Disclosure in a Partnership
+      - Not_Interested_Handback_H Basics
+      - Not_Interested_Handback_Stress Management
+      - Not_Interested_Handback_Menstruation and H
+  - intent: Remind_2_days_Handback
+    examples: |
+      - Remind_2_days_Handback_Medicine Adherence
+      - Remind_2_days_Handback_Drug Use and Storage
+      - Remind_2_days_Handback_Side Effects and Drugs
+      - Remind_2_days_Handback_Sex and H
+      - Remind_2_days_Handback_H Myths
+      - Remind_2_days_Handback_Stigmatisation
+      - Remind_2_days_Handback_Jewel Story
+      - Remind_2_days_Handback_Social Support
+      - Remind_2_days_Handback_Disclosure
+      - Remind_2_days_Handback_Disclosure in a Partnership
+      - Remind_2_days_Handback_H Basics
+      - Remind_2_days_Handback_Stress Management
+      - Remind_2_days_Handback_Menstruation and H
   - intent: bot_functions
     examples: |
       - bot_functions
@@ -22,6 +188,7 @@ nlu:
       - yup
       - ya
       - sure
+      - Yes-Button-Payload
   - intent: VF.NO
     examples: |
       - no
@@ -53,6 +220,11 @@ nlu:
   - intent: VF.PREVIOUS
     examples: |
       - previous
+      - Utilizing prophylaxes
+      - Using proper protection
+      - Using protected sex
+      - Participating in safe sex
+      - Maintaining a proper vaccine schedule
   - intent: VF.START_OVER
     examples: |
       - start over
@@ -65,6 +237,7 @@ nlu:
       - take me to the menu
       - main page
       - menu
+      - Menu
   - intent: disclosure_general
     examples: |
       - disclosure_general
@@ -83,101 +256,6 @@ nlu:
   - intent: hiv_basics
     examples: |
       - hiv_basics
-  - intent: hiv_myths
-    examples: |
-      - hiv_myths
-  - intent: drugs_and_side_effects
-    examples: |
-      - drugs_and_side_effects
-  - intent: feeling_good
-    examples: |
-      - Good
-      - No p
-      - No long thing/tin
-      - Fine fine
-      - I dey kampe
-      - Very very good
-      - Very very fine
-      - I dey oo
-      - perfect thanks
-      - doing great
-      - No pro
-      - Mo wa daada
-      - I'm fine oo, you nko
-      - Wonderful
-      - Splendid and you?
-      - No quanch
-      - I dey good
-      - I dey kakaraka
-      - No problem
-      - Im good
-      - I am enjoying life
-      - I'm cool as usual padi
-      - Am cool and you
-      - I'm great!
-      - I am feeling very well!
-      - Absolutely great!
-      - Feeling good!
-      - I am great, thank you!
-      - I am doing good
-      - I am feeling great today!
-  - intent: feeling_ok
-    examples: |
-      - Very well thanks
-      - I fine sha
-      - Fine oooo
-      - Very well thank you
-      - doing well
-      - I am well Ayo
-      - all is well Ayo
-      - I dey okay
-      - Have had worse days
-      - I dey fine ooo
-      - I dey kampe
-      - No  yawah
-      - No wahala
-      - I'm cool
-      - Fine and how are you
-      - Am fine thank you
-      - Fyn
-      - Hi I’m fine and you
-      - I'm alright
-      - not bad
-      - OK
-      - Alright
-      - Quite ok
-      - I am doing fine
-      - I am ok
-      - I am alright
-  - intent: feeling_not_ok
-    examples: |
-      - Am stressed out
-      - I am not fyn
-      - Not fyn
-      - not happy today
-      - Not fine
-      - Not well at all
-      - Very bored and fatigued
-      - Very tired oo
-      - Not okay oo
-      - Not okay not fine
-      - Bad day
-      - I'm not feeling well
-      - I'm unwell
-      - I am unwell
-      - I don't want to talk about it
-      - Not doing good
-      - I am not feeling so well
-      - Not feeling good
-      - Not good at all
-      - Not that great
-      - Not so well
-  - intent: menstruation
-    examples: |
-      - menstruation
-  - intent: greetings
-    examples: |
-      - greetings
   - intent: Menstruation and H
     examples: |
       - What is the relationship between HIV/AIDS and my menstruation
@@ -190,21 +268,19 @@ nlu:
       - social_support
   - intent: support_group_purpose
     examples: |
-      - for making [appointment](sg_purpose)
-      - [fun](sg_purpose)
-      - finding a [meeting](sg_purpose)
-      - having [growth](sg_purpose)
-      - for keeping [academic](sg_purpose)
-      - for [friend](sg_purpose)
-      - more [support](sg_purpose) and [help](sg_purpose)
-      - [appointment](sg_purpose) and [fun](sg_purpose)
-      - receive [meeting](sg_purpose)
-      - To receive [growth](sg_purpose)
-      - receive [academic](sg_purpose)
-      - To receive [friend](sg_purpose)
-      - [support](sg_purpose) and [help](sg_purpose)
+      - for dating
+      - for making friends
+      - finding a buddy
+      - having fun
+      - for keeping appointments
+      - for support
+      - more growth and fun
+      - knowledge and help
+      - receive support
+      - To receive knowledge
   - intent: negative_effects
     examples: |
+      - I had a [rash](side_effect)
       - Head ache
       - i am unable to sleep
       - not able to sleep
@@ -220,9 +296,6 @@ nlu:
       - I sweat a lot at night
       - I get headaches
       - i have a headache
-      - [rash](side_effect)
-      - I just want to sleep all the time
-      - I feel so tired that I don't feel like getting up in the morning
       - I have rashes on my skin and they itch
       - I have these red patches on my skin, they hurt
       - Is it normal to sweat so much?
@@ -231,20 +304,26 @@ nlu:
       - I am awake in the night
       - I cannot sleep
       - I feel hungry all the time
-      - After taking the medication, I get [dry mouth](side_effect)
+      - After taking the medication, I get headache
       - My head hurts
       - I imagine seeing things
-      - I feel I am [sweating](side_effect)
+      - I feel I am hallucinating
       - I hear voices in my head
-      - I feel as if I have [insomnia](side_effect)
-      - I feel very [appetite](side_effect)
+      - I feel as if I have nausea
+      - I feel very hungry all the time
       - I am repelled by food
       - I have no appetite
       - I don't feel like eating
       - Sometimes I feel very sad
-      - I often feel like [hallucination](side_effect)
-      - I get so [headache](side_effect)
-      - Sometimes I get [vomiting](side_effect)
+      - I often feel like vomitting
+      - Sometimes I get rashes
+      - I had a [dry mouth](side_effect)
+      - I had a [sweating](side_effect)
+      - I had a [insomnia](side_effect)
+      - I had a [appetite](side_effect)
+      - I had a [hallucination](side_effect)
+      - I had a [headache](side_effect)
+      - I had a [vomiting](side_effect)
   - intent: feeling_depressed
     examples: |
       - Depression
@@ -281,80 +360,254 @@ nlu:
       - I have no negative side effects
   - intent: severe_side_effects
     examples: |
-      - [dizziness](severe_effect)
-      - I feel extremely [tired](severe_effect)
-      - I get [diarrhea](severe_effect)
-      - I have [mouth sores](severe_effect) in my feet
+      - I feel extremely exhausted
+      - I get tingling sensation
+      - I have numbness in my feet
       - My poo is like water
       - I have watery motions
-      - ARV gives me [tingling sensation](severe_effect)
-      - The medication gives me [jaundice](severe_effect)
-      - I have severe [dizziness](severe_effect)
-      - My skin is yellow, is it [tired](severe_effect)?
-      - I may have [diarrhea](severe_effect) like symptoms
+      - ARV gives me diarrhea
+      - The medication gives me ulcers
+      - I have severe fatigue
+      - My skin is yellow, is it a side effect?
+      - I may have jaundice like symptoms
       - I see yellow instead of white
       - My eyes look yellow
       - My skin has turned yellow
-      - I may have [mouth sores](severe_effect) like symptoms
-      - I have severe [tingling sensation](severe_effect)
-      - My skin is yellow, is it [jaundice](severe_effect)?
-  - intent: swallowing_sweet
-    examples: |
-      - [alcohol](sweet_solvent)
-      - sometimes I take them with [juice](sweet_solvent)
-      - I take them with [mineral](sweet_solvent) and [water](sweet_solvent)
-      - I take them with [alcohol](sweet_solvent)
-      - With [juice](sweet_solvent)
-      - I use [mineral](sweet_solvent)
-      - I swallow them with [water](sweet_solvent)
-      - I take my sweets with [alcohol](sweet_solvent)
-      - I drink it with [juice](sweet_solvent)
-      - I drink it with [mineral](sweet_solvent)
-      - I take my sweets with [water](sweet_solvent)
   - intent: drug_use_storage
     examples: |
-      - drug_use_storage
-  - synonym: appointment
+      - Drug Use and Storage
+  - intent: stress_reasons
     examples: |
-      - reminder
-      - schedule appointment
-      - keep appointment
-  - synonym: fun
+      - overthinking
+      - money related
+      - moving around all time
+      - I was so stressed and worried about my lifestyle and not comfortable enough as I wish
+      - My work is really stressful
+      - Thinking about food
+      - Tough learning
+      - Thinking most times of the situation around me
+      - noting
+      - My mother
+      - my siblings
+      - My father
+      - my office
+      - Nothing
+      - Every day use of drugs
+      - Workload
+      - Effects of drugs
+      - Sleeplessness
+      - Family issues
+      - Too much wahala
+      - No helper
+      - I no get moni
+      - I don't know ooo
+      - Sickness
+      - Money
+      - Work
+      - I want to japa
+      - I don't have parents
+      - My school work
+      - I want to get admission
+      - I often fall sick
+      - No job oo
+      - I am just tired
+      - I don't have friend
+      - I want to live norma/normal life
+      - I think of sex
+      - I don't have money
+      - Too much school lectures
+      - Too much work
+      - I no like drugs
+      - I am tired of taking drugs
+      - I am tired of life
+      - I don't want to be sick
+      - I don't want to be in this situation
+      - I don't know how to disclose my status
+      - I want to reveal my status to my family
+      - Worried about stigmatization
+      - Family reasons
+      - Health reasons
+      - It's difficult to cope
+      - I am worried
+  - intent: stigma_situations
     examples: |
-      - chilling
-      - just chilling
-      - gaming
-  - synonym: meeting
+      - i was treated badly
+      - i was shamed
+      - i was bullied
+      - treated as an outcast
+      - rude treatment
+      - everyone was very mean
+      - friends stopped inviting me
+      - friends did not talk to me
+      - i was excluded
+  - intent: new_reminder
     examples: |
-      - exchange
-      - chatting
-      - dating
-      - dating each other
-  - synonym: growth
+      - new_reminder
+  - intent: reminder_reset
     examples: |
-      - personal growth
-  - synonym: academic
+      - reset reminder
+      - Can I reset the reminder?
+      - Reset my reminder
+      - I need to reset the reminder
+      - Change the reminder
+  - intent: show_reminder
     examples: |
-      - knowledge
-      - information
-      - questions
-      - answers
-  - synonym: friend
+      - show_reminder
+  - intent: medication_reminder
     examples: |
-      - friendship
-      - group of friends
-      - buddies
-      - friends
-  - synonym: support
+      - medication scheduler
+      - med reminder
+      - reminder medication
+      - medication reminder
+  - intent: prevent_aids
     examples: |
-      - encouragement
-      - motivation
-  - synonym: help
+      - The best is to take his drug regular
+      - using drugs, vegetables, fruits, good things
+      - eating good food and vegetables and fruits
+      - By using my H drugs
+      - by using my HIV drugs
+      - Taking my antiretroval drugs
+      - Taking ARV daily
+      - Taking ARVs daily
+      - using my sweets and good food
+      - taking my drugs always
+      - taking drugs daily
+      - taking sweets daily
+      - eating healthy food
+      - not skipping drugs
+      - taking medication
+      - not missing sweets
+      - taking sweets regularly
+      - adhering to sweets
+  - intent: HIV Basics_New
     examples: |
-      - financial help
-      - medical help
-      - assistance
-      - helping each other
+      - HIV Basics_New
+  - intent: jewel_checkup_reasons
+    examples: |
+      - To avoid other health consequences
+      - Yes for a check up
+      - just for her to know was wrong with her in time cause prevention is better than cure
+      - Because it the first step to take before doing any other things
+      - To confirm his or her status presently
+      - To know the causes of the illness
+      - test for [post exposure prophylaxis](pep_checkup)
+      - check for [exposure](pep_checkup)
+      - treat [infected](pep_checkup)
+      - [infection](pep_checkup)
+      - to get a [transmission](pep_checkup) test
+      - to get tested for [H](pep_checkup)
+      - For [post exposure](pep_checkup) treatment
+      - She could have been exposed to [PEP](pep_checkup)
+      - To go for [post exposure prophylaxis](pep_checkup)
+      - To get treated for [exposure](pep_checkup)
+      - To check for any injuries or infections
+      - To ensure she was not infected
+      - She could have been infected with H
+      - She may have contracted H.
+      - To go for [infected](pep_checkup)
+      - To get treated for [infection](pep_checkup)
+      - To go for [transmission](pep_checkup)
+      - To get treated for [H](pep_checkup)
+      - To go for [post exposure](pep_checkup)
+      - To get treated for [PEP](pep_checkup)
+  - intent: wellness
+    examples: |
+      - wellness survey
+      - wellness
+  - intent: post_exposure_measures
+    examples: |
+      - seek medical advice without delay
+      - take PEP
+      - take post exposure profylaxis to prevent H
+      - request post exposure profylaxis
+      - ask for post exposure profylaxis
+      - take PEP as soon as possible
+      - request for PEP
+      - go for PEP
+      - not ignore going to the doctor
+      - get medical help
+      - go for a checkup
+      - urgently go to a clinic
+      - consult a doctor
+      - take PEP to prevent infection
+      - quickly take him to the doctor
+      - immediately take medication to prevent H
+      - ask for drugs to prevent H
+      - go to an H clinic
+      - rush him to the hospital for H checkup
+      - go to the hospital
+      - PEP
+  - intent: sex_h
+    examples: |
+      - sex h
+      - sex
+      - sex and HIV
+      - sex and H
+  - intent: scheduler_reminder
+    examples: |
+      - scheduler_reminder
+  - intent: scheduler_set_reminder
+    examples: |
+      - scheduler_set_reminder
+  - intent: new_appointment
+    examples: |
+      - new_appointment
+  - intent: appointment_reset
+    examples: |
+      - appointment_reset
+  - intent: appointment_reminder
+    examples: |
+      - appointment reminder
+  - intent: show_appointment
+    examples: |
+      - show_appointment
+  - intent: snooze_appointment
+    examples: |
+      - snooze_appointment
+  - intent: thank_you
+    examples: |
+      - that's great!
+      - thanks
+      - Thank you
+  - intent: new_appointment_reminder
+    examples: |
+      - new_appointment_reminder
+  - intent: appointment_reminder_reset
+    examples: |
+      - appointment_reminder_reset
+  - intent: show_appointment_reminder
+    examples: |
+      - show_appointment_reminder
+  - intent: snooze_appointment_reminder
+    examples: |
+      - snooze_appointment_reminder
+  - intent: test_sandro
+    examples: |
+      - test_sandro_start
+  - intent: future_menu
+    examples: |
+      - future_menu
+  - intent: swallowing_sweet
+    examples: |
+      - Milk
+      - I take it with beverages
+      - juice
+      - Fanta
+      - Coke
+      - Coca Cola
+      - sometimes I take them with beer
+      - I take them with fanta and cola
+      - I take them with water
+      - With guda
+      - I use capri sun
+      - I swallow them with alcohol
+      - I take my sweets with pepsi
+      - I drink it with bigi apple
+      - [milk](sweet_solvent)
+      - [alcohol](sweet_solvent)
+      - [juice](sweet_solvent)
+      - [mineral](sweet_solvent)
+      - [water](sweet_solvent)
   - synonym: rash
     examples: |
       - skin rash
@@ -417,45 +670,6 @@ nlu:
       - vomit
       - don't feel like eating
       - throwing up all the time
-  - synonym: dizziness
-    examples: |
-      - dizzy
-      - fainting
-      - faint
-      - my eye is turning
-      - eye is spinning
-  - synonym: tired
-    examples: |
-      - tiredness
-      - fatigue
-      - weakness
-      - weak
-      - feeling tired every time
-  - synonym: diarrhea
-    examples: |
-      - watery poo
-      - loose motions
-      - diarrhoea
-      - going to toilet everytime
-  - synonym: mouth sores
-    examples: |
-      - mouth ulcers
-      - irritation in mouth
-      - painful sores
-      - wound in my mouth
-  - synonym: tingling sensation
-    examples: |
-      - numbness
-      - weird sensation
-      - funny sensation
-      - pain
-      - movement in my leg
-      - not feeling anything in my leg
-  - synonym: jaundice
-    examples: |
-      - yellow skin
-      - yellow eyes
-      - my wee wee is yellow
   - synonym: alcohol
     examples: |
       - beer
@@ -484,8 +698,10 @@ nlu:
     examples: |
       - bottled water
       - bottle water
+      - Water
       - pure water
       - sachet water
       - tap water
       - well water
       - borehole water
+

@@ -5,9 +5,69 @@ stories:
     steps:
       - intent: hiv_drug_freq
       - action: action_voiceflow_dm
+  - story: hiv_myths_story
+    steps:
+      - intent: hiv_myths
+      - action: action_voiceflow_dm
+  - story: drugs_and_side_effects_story
+    steps:
+      - intent: drugs_and_side_effects
+      - action: action_voiceflow_dm
+  - story: feeling_good_story
+    steps:
+      - intent: feeling_good
+      - action: action_voiceflow_dm
+  - story: feeling_ok_story
+    steps:
+      - intent: feeling_ok
+      - action: action_voiceflow_dm
+  - story: feeling_not_ok_story
+    steps:
+      - intent: feeling_not_ok
+      - action: action_voiceflow_dm
+  - story: menstruation_story
+    steps:
+      - intent: menstruation
+      - action: action_voiceflow_dm
+  - story: greetings_story
+    steps:
+      - intent: greetings
+      - action: action_voiceflow_dm
+  - story: None_story
+    steps:
+      - intent: None
+      - action: action_voiceflow_dm
+  - story: start_medication_reminder_story
+    steps:
+      - intent: start_medication_reminder
+      - action: action_voiceflow_dm
+  - story: snooze_reminder_story
+    steps:
+      - intent: snooze_reminder
+      - action: action_voiceflow_dm
+  - story: Taken!_story
+    steps:
+      - intent: Taken!
+      - action: action_voiceflow_dm
+  - story: Remind me later_story
+    steps:
+      - intent: Remind me later
+      - action: action_voiceflow_dm
   - story: intro_ayo_story
     steps:
       - intent: intro_ayo
+      - action: action_voiceflow_dm
+  - story: Module_Yes_Handback_story
+    steps:
+      - intent: Module_Yes_Handback
+      - action: action_voiceflow_dm
+  - story: Not_Interested_Handback_story
+    steps:
+      - intent: Not_Interested_Handback
+      - action: action_voiceflow_dm
+  - story: Remind_2_days_Handback_story
+    steps:
+      - intent: Remind_2_days_Handback
       - action: action_voiceflow_dm
   - story: bot_functions_story
     steps:
@@ -85,34 +145,6 @@ stories:
     steps:
       - intent: hiv_basics
       - action: action_voiceflow_dm
-  - story: hiv_myths_story
-    steps:
-      - intent: hiv_myths
-      - action: action_voiceflow_dm
-  - story: drugs_and_side_effects_story
-    steps:
-      - intent: drugs_and_side_effects
-      - action: action_voiceflow_dm
-  - story: feeling_good_story
-    steps:
-      - intent: feeling_good
-      - action: action_voiceflow_dm
-  - story: feeling_ok_story
-    steps:
-      - intent: feeling_ok
-      - action: action_voiceflow_dm
-  - story: feeling_not_ok_story
-    steps:
-      - intent: feeling_not_ok
-      - action: action_voiceflow_dm
-  - story: menstruation_story
-    steps:
-      - intent: menstruation
-      - action: action_voiceflow_dm
-  - story: greetings_story
-    steps:
-      - intent: greetings
-      - action: action_voiceflow_dm
   - story: Menstruation and H_story
     steps:
       - intent: Menstruation and H
@@ -140,4 +172,108 @@ stories:
   - story: drug_use_storage_story
     steps:
       - intent: drug_use_storage
+      - action: action_voiceflow_dm
+  - story: stress_reasons_story
+    steps:
+      - intent: stress_reasons
+      - action: action_voiceflow_dm
+  - story: stigma_situations_story
+    steps:
+      - intent: stigma_situations
+      - action: action_voiceflow_dm
+  - story: new_reminder_story
+    steps:
+      - intent: new_reminder
+      - action: action_voiceflow_dm
+  - story: reminder_reset_story
+    steps:
+      - intent: reminder_reset
+      - action: action_voiceflow_dm
+  - story: show_reminder_story
+    steps:
+      - intent: show_reminder
+      - action: action_voiceflow_dm
+  - story: medication_reminder_story
+    steps:
+      - intent: medication_reminder
+      - action: action_voiceflow_dm
+  - story: prevent_aids_story
+    steps:
+      - intent: prevent_aids
+      - action: action_voiceflow_dm
+  - story: HIV Basics_New_story
+    steps:
+      - intent: HIV Basics_New
+      - action: action_voiceflow_dm
+  - story: jewel_checkup_reasons_story
+    steps:
+      - intent: jewel_checkup_reasons
+      - action: action_voiceflow_dm
+  - story: wellness_story
+    steps:
+      - intent: wellness
+      - action: action_voiceflow_dm
+  - story: post_exposure_measures_story
+    steps:
+      - intent: post_exposure_measures
+      - action: action_voiceflow_dm
+  - story: sex_h_story
+    steps:
+      - intent: sex_h
+      - action: action_voiceflow_dm
+  - story: scheduler_reminder_story
+    steps:
+      - intent: scheduler_reminder
+      - action: action_voiceflow_dm
+  - story: scheduler_set_reminder_story
+    steps:
+      - intent: scheduler_set_reminder
+      - action: action_voiceflow_dm
+  - story: new_appointment_story
+    steps:
+      - intent: new_appointment
+      - action: action_voiceflow_dm
+  - story: appointment_reset_story
+    steps:
+      - intent: appointment_reset
+      - action: action_voiceflow_dm
+  - story: appointment_reminder_story
+    steps:
+      - intent: appointment_reminder
+      - action: action_voiceflow_dm
+  - story: show_appointment_story
+    steps:
+      - intent: show_appointment
+      - action: action_voiceflow_dm
+  - story: snooze_appointment_story
+    steps:
+      - intent: snooze_appointment
+      - action: action_voiceflow_dm
+  - story: thank_you_story
+    steps:
+      - intent: thank_you
+      - action: action_voiceflow_dm
+  - story: new_appointment_reminder_story
+    steps:
+      - intent: new_appointment_reminder
+      - action: action_voiceflow_dm
+  - story: appointment_reminder_reset_story
+    steps:
+      - intent: appointment_reminder_reset
+      - action: action_voiceflow_dm
+  - story: show_appointment_reminder_story
+    steps:
+      - intent: show_appointment_reminder
+      - action: action_voiceflow_dm
+  - story: snooze_appointment_reminder_story
+    steps:
+      - intent: snooze_appointment_reminder
+      - action: action_voiceflow_dm
+  - story: test_sandro_story
+    steps:
+      - intent: test_sandro
+      - action: action_voiceflow_dm
+  - story: future_menu_story
+    steps:
+      - intent: future_menu
       - action: action_voiceflow_dm

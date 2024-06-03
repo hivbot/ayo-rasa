@@ -5,7 +5,22 @@ actions:
   - action_voiceflow_dm
 intents:
   - hiv_drug_freq
+  - hiv_myths
+  - drugs_and_side_effects
+  - feeling_good
+  - feeling_ok
+  - feeling_not_ok
+  - menstruation
+  - greetings
+  - None
+  - start_medication_reminder
+  - snooze_reminder
+  - Taken!
+  - Remind me later
   - intro_ayo
+  - Module_Yes_Handback
+  - Not_Interested_Handback
+  - Remind_2_days_Handback
   - bot_functions
   - adherence
   - VF.YES
@@ -25,13 +40,6 @@ intents:
   - nutrition
   - life_building_skills
   - hiv_basics
-  - hiv_myths
-  - drugs_and_side_effects
-  - feeling_good
-  - feeling_ok
-  - feeling_not_ok
-  - menstruation
-  - greetings
   - Menstruation and H
   - social_support
   - support_group_purpose
@@ -39,20 +47,39 @@ intents:
   - feeling_depressed
   - no_side_effects
   - severe_side_effects
-  - swallowing_sweet
   - drug_use_storage
+  - stress_reasons
+  - stigma_situations
+  - new_reminder
+  - reminder_reset
+  - show_reminder
+  - medication_reminder
+  - prevent_aids
+  - HIV Basics_New
+  - jewel_checkup_reasons
+  - wellness
+  - post_exposure_measures
+  - sex_h
+  - scheduler_reminder
+  - scheduler_set_reminder
+  - new_appointment
+  - appointment_reset
+  - appointment_reminder
+  - show_appointment
+  - snooze_appointment
+  - thank_you
+  - new_appointment_reminder
+  - appointment_reminder_reset
+  - show_appointment_reminder
+  - snooze_appointment_reminder
+  - test_sandro
+  - future_menu
+  - swallowing_sweet
 entities:
-  - sg_purpose
   - side_effect
-  - severe_effect
+  - pep_checkup
   - sweet_solvent
 slots:
-  sg_purpose:
-    type: text
-    influence_conversation: false
-    mappings:
-      - type: from_entity
-        entity: sg_purpose
   side_effect:
     type: text
     influence_conversation: false
@@ -63,12 +90,12 @@ slots:
         entity: side_effect
         conditions:
           - active_loop: negative_effects_form
-  severe_effect:
+  pep_checkup:
     type: text
     influence_conversation: false
     mappings:
       - type: from_entity
-        entity: severe_effect
+        entity: pep_checkup
   sweet_solvent:
     type: text
     influence_conversation: false
@@ -81,7 +108,7 @@ slots:
           - active_loop: swallowing_sweet_form
 responses:
   utter_ask_negative_effects_form_side_effect:
-    - text: What is the value of side_effect
+    - text: hädakke
   utter_ask_swallowing_sweet_form_sweet_solvent:
     - text: What is the value of sweet_solvent
 forms:
